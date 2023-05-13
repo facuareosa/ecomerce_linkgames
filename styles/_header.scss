@@ -1,0 +1,34 @@
+@import "variables";
+
+.header{
+    background: linear-gradient($colorPrincipal 70%, transparent);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    p{
+        font-size: 1.5rem;
+    }
+    &__container{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__h1{
+        justify-self: start;
+    }
+    &__logo{
+        justify-self: center;
+    }
+    &__nav{
+        justify-self: end;
+        gap: 1rem;
+    }
+    &__ul{
+        display: flex;
+        gap: 2rem;
+    }
+    &__li{
+        
+    }
+}

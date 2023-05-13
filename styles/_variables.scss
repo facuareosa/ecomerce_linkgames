@@ -1,0 +1,14 @@
+$colorPrincipal: #ffaa22;
+$colorSombra:  #ffee66;
+
+@mixin cardGrid{
+    display:grid;
+    grid-template-areas:  "x x""y1 y2""z z";
+    row-gap: 1rem;
+}
+
+@mixin font($family, $size, $color){
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+}

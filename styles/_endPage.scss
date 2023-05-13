@@ -1,0 +1,9 @@
+@import "variables";
+
+.decoration{
+
+    &__endPage{
+        background: linear-gradient(transparent 70%, $colorPrincipal);
+        height: 5rem;
+    }
+}
