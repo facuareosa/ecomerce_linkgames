@@ -2,26 +2,66 @@
     "games":[
         {
             "title": "Graveyard keeper",
-            "genre": "Supervivencia",
+            "genre": "Farming",
             "price": 200,
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe mollitia lorem",
+            "description": "Los creadores de Punch Club nos traen Graveyard Keeper, el simulador de gestión de cementerios medievales más impreciso de la historia.",
             "img": "./assets/img/img_game/Graveyard_keeper.jpg",
             "imgh": "./assets/img/img_hover/Graveyard_keeper_h.png"
         },
         {
-            "title": "PRUEBA",
+            "title": "7 days to die",
             "genre": "Supervivencia",
             "price": 200,
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe mollitia lorem",
-            "img": "./assets/img/img_game/Graveyard_keeper.jpg",
+            "description": "7 Days to Die es un juego de mundo abierto que combina de forma extraordinaria juegos de disparos en primera persona, supervivencia de terror, defensa de torres y rol. Juega al primer RPG de supervivencia zombi de entorno abierto. ¡Navezgane te espera!",
+            "img": "./assets/img/img_game/7_Days_to_die.jpg",
             "imgh": "./assets/img/img_hover/Graveyard_keeper_h.png"
         },
         {
-            "title": "V Risiong",
-            "genre": "RPG",
+            "title": "ARK: Survival Evolved",
+            "genre": "Supervivencia",
             "price": 300,
-            "description": "juego chingon",
-            "img": "./assets/img/img_game/Graveyard_keeper.jpg",
+            "description": "Juega como un hombre o una mujer desnudo, congelándote y muriéndote de hambre en una isla misteriosa. Debes cazar, cosechar, crear objetos, cultivar, y construir refugios para sobrevivir. Usa tu habilidad y astucia para matar, domesticar, criar y cabalgar dinosaurios y otras criaturas primitivas.",
+            "img": "./assets/img/img_game/Ark.webp",
+            "imgh": "./assets/img/img_hover/Graveyard_keeper_h.png"
+        },
+        {
+            "title": "CSGO",
+            "genre": "Shooter",
+            "price": 200,
+            "description": "Counter-Strike: Global Offensive (CS:GO) amplía el juego de acción por equipos del que fue pionero cuando salió hace más de 20 años. CS:GO incluye nuevos mapas, personajes, armas y modos de juego, y ofrece versiones actualizadas del contenido clásico de Counter-Strike",
+            "img": "./assets/img/img_game/CSGO.webp",
+            "imgh": "./assets/img/img_hover/Graveyard_keeper_h.png"
+        },
+        {
+            "title": "New World",
+            "genre": "RPG",
+            "price": 200,
+            "description": "Explora un emocionante MMO de mundo abierto repleto de peligros y oportunidades en el que forjarás un nuevo destino en la isla sobrenatural de Aetérnum.",
+            "img": "./assets/img/img_game/New_World.jpg",
+            "imgh": "./assets/img/img_hover/Graveyard_keeper_h.png"
+        },
+        {
+            "title": "Stardew Valley",
+            "genre": "Farming",
+            "price": 200,
+            "description": "Acabas de heredar la vieja parcela agrícola de tu abuelo de Stardew Valley. Decides partir hacia una nueva vida con unas herramientas usadas y algunas monedas. ¿Te ves capaz de vivir de la tierra y convertir estos campos descuidados en un hogar próspero?",
+            "img": "./assets/img/img_game/Stardew_valley.jpg",
+            "imgh": "./assets/img/img_hover/Graveyard_keeper_h.png"
+        },
+        {
+            "title": "V Rising",
+            "genre": "RPG",
+            "price": 200,
+            "description": "Despierta siendo un vampiro. Sal en busca de sangre para recuperar tus fuerzas y evade la abrasadora luz solar para sobrevivir. Alza tu castillo y progresa en un mundo abierto lleno de misterios que cambia constantemente. Gana aliados en línea y conquista las tierras de los vivos.",
+            "img": "./assets/img/img_game/V-rising.jpg",
+            "imgh": "./assets/img/img_hover/Graveyard_keeper_h.png"
+        },
+        {
+            "title": "COD Modern Warfare II - Warzone2.0",
+            "genre": "Shooter",
+            "price": 200,
+            "description": "En Call of Duty®: Modern Warfare® II, los jugadores se verán inmersos en un conflicto a escala global sin precedentes que incluye el regreso de Operadores icónicos de la fuerza operativa 141.",
+            "img": "./assets/img/img_game/Warzone_2.jpg",
             "imgh": "./assets/img/img_hover/Graveyard_keeper_h.png"
         }
     ]
