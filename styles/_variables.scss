@@ -12,3 +12,16 @@ $colorSombra:  #ffee66;
     font-size: $size;
     color: $color;
 }
+
+@mixin fadeAnimation($time){
+    animation:fadeIn $time;
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+        
+    }
+}

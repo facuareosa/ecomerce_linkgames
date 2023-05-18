@@ -51,6 +51,15 @@
   padding: 1rem;
   border: #ffaa22 solid 3px;
   border-radius: 10px;
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .card__img {
   position: relative;
@@ -108,10 +117,10 @@
   grid-area: x;
   font-size: 1.5rem;
 }
-.card__body-gender {
+.card__body-genre {
   margin-top: 0px;
 }
-.card__body-gender-text {
+.card__body-genre-text {
   grid-area: y1;
   font-size: 0.7rem;
   padding: 5px;
