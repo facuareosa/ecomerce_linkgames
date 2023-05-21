@@ -1,24 +1,23 @@
 @import "variables";
 
 .header{
-    background: linear-gradient($colorPrincipal 70%, transparent);
+    background: linear-gradient(map-get($colores, principal) 70%, transparent);
     height: 5rem;
     display: flex;
     align-items: center;
-    p{
-        font-size: 1.5rem;
-    }
     &__container{
         width: 90%;
+        height: 100%;
         display: grid;
         margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);
+        align-items: center;
     }
     &__h1{
         justify-self: start;
     }
     &__logo{
-        justify-self: center;
+            object-fit: fill;
     }
     &__nav{
         justify-self: end;

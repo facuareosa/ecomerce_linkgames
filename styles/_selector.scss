@@ -6,7 +6,7 @@
     justify-content: center;
     gap:1rem;
     height: 8rem;
-    background: linear-gradient(transparent,$colorPrincipal 30%,$colorPrincipal 70%,transparent);
+    background: linear-gradient(transparent,map-get($colores, principal) 30%,map-get($colores, principal) 70%,transparent);
     margin-bottom: 3rem;
     
     &__input{

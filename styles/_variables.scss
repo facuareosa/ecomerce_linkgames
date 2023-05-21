@@ -1,5 +1,10 @@
-$colorPrincipal: #ffaa22;
-$colorSombra:  #ffee66;
+$colores:(
+    "principal": #ffaa22,
+    "sombra":   #ffee66,
+    );
+
+$fuenteDescripcion: ('Chivo Mono', monospace);
+
 
 @mixin cardGrid{
     display:grid;

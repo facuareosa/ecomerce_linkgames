@@ -10,6 +10,7 @@
         padding: 2rem;
     }
     &__description{
+        @include font($fuenteDescripcion,1.5em, black);
         width: 50%;
         text-align: center;
     }

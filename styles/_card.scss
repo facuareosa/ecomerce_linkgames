@@ -7,7 +7,7 @@
     width: 20rem;
     height: 30rem;
     padding: 1rem;
-    border: $colorPrincipal solid 3px;
+    border: map-get($colores, principal) solid 3px;
     border-radius: 10px;
     @include fadeAnimation (.5s);
 
@@ -51,7 +51,7 @@
     }
 
     &:hover {
-        box-shadow: $colorSombra 0px 0px 10px 1px;
+        box-shadow: map-get($colores, sombra) 0px 0px 10px 1px;
         transition: 0.3s;
     }
 
@@ -74,7 +74,9 @@
 
         &-title {
             grid-area: x;
-            font-size: 1.5rem;
+            @include font($fuenteDescripcion,1.5em, black);
+            font-weight: bold;
+            
         }
 
         &-genre {
@@ -82,7 +84,8 @@
 
             &-text {
                 grid-area: y1;
-                font-size: 0.7rem;
+                @include font($fuenteDescripcion,0.7em, black);
+                font-weight: bold;
                 padding: 5px;
                 border-radius: 10px;
                 background-color: rgb(212, 212, 212);
@@ -97,6 +100,7 @@
 
         &-description {
             grid-area: z;
+            @include font($fuenteDescripcion,1em, black);
         }
     }
 
@@ -105,10 +109,10 @@
         align-self: center;
         margin-top: auto;
         box-shadow: 0px 0px 0px 0px #fff6af;
-        background: linear-gradient(to bottom, #ffffff 5%, $colorPrincipal 100%);
+        background: linear-gradient(to bottom, #ffffff 5%, map-get($colores, principal) 100%);
         background-color: #ffffff;
         border-radius: 10px;
-        border: 1px solid $colorPrincipal;
+        border: 1px solid map-get($colores, principal);
         display: inline-block;
         cursor: pointer;
         color: black;
@@ -117,11 +121,11 @@
         font-weight: bold;
         padding: 0.4rem 2rem;
         text-decoration: none;
-        text-shadow: 0px 1px 0px $colorSombra;
+        text-shadow: 0px 1px 0px map-get($colores, sombra);
 
         &:hover {
-            background: linear-gradient(to bottom, $colorPrincipal 5%, #ffffff 100%);
-            background-color: $colorPrincipal;
+            background: linear-gradient(to bottom, map-get($colores, principal) 5%, #ffffff 100%);
+            background-color: map-get($colores, principal);
         }
 
         &:active {

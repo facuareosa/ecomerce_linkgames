@@ -3,7 +3,7 @@
 .decoration{
 
     &__endPage{
-        background: linear-gradient(transparent 70%, $colorPrincipal);
+        background: linear-gradient(transparent 70%, map-get($colores, principal));
         height: 5rem;
     }
 }
