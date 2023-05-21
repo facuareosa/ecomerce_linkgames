@@ -4,22 +4,22 @@
     display: flex;
     justify-content: center;
     background-color: black;
-    border-top: .5em solid map-get($colores, principal);
-    padding: 2em;
+    border-top: .5rem solid map-get($colores, principal);
+    padding: 2rem;
 
     &__container{
         display: flex;
         align-items: center;
     }
     &__p{
-        font-size: 1em;
+        font-size: 1rem;
         color: grey;
     }
     &__ul{
         display: flex;
     }
     &__li{
-        margin: 0 .4em
+        margin: 0 .4rem
     }
     &__ico{
         width: 100%;

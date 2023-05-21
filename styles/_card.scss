@@ -71,10 +71,11 @@
 
     &__body {
         @include cardGrid;
+        padding-top: 2rem;
 
         &-title {
             grid-area: x;
-            @include font($fuenteDescripcion,1.5em, black);
+            @include font($fuente,1.5em, black);
             font-weight: bold;
             
         }
@@ -84,7 +85,7 @@
 
             &-text {
                 grid-area: y1;
-                @include font($fuenteDescripcion,0.7em, black);
+                @include font($fuente,0.7em, black);
                 font-weight: bold;
                 padding: 5px;
                 border-radius: 10px;
@@ -100,7 +101,7 @@
 
         &-description {
             grid-area: z;
-            @include font($fuenteDescripcion,1em, black);
+            @include font($fuente,1em, black);
         }
     }
 

@@ -8,7 +8,11 @@
     height: 8rem;
     background: linear-gradient(transparent,map-get($colores, principal) 30%,map-get($colores, principal) 70%,transparent);
     margin-bottom: 3rem;
-    
+
+    &__text{
+        @include font($fuente,1.2rem, black);
+        font-weight: bold;
+    }
     &__input{
         height: 2rem;
         border-radius: 10px;
@@ -19,6 +23,8 @@
         font-size: 3rem;
     }
     &__submit{
+        @include font($fuente,.7rem, black);
+        font-weight: bold;
         height: 2rem;
         width: 4rem;
         border-radius: 10px;

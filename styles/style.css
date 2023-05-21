@@ -13,10 +13,16 @@
   align-items: center;
 }
 .header__h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 900;
   justify-self: start;
 }
 .header__logo {
-  object-fit: fill;
+  justify-self: center;
+  max-height: 5rem;
 }
 .header__nav {
   justify-self: end;
@@ -26,6 +32,20 @@
   display: flex;
   gap: 2rem;
 }
+.header__li {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+.header__li:hover {
+  scale: 1.1;
+  transition: 0.3s;
+}
+.header__li-a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -34,11 +54,16 @@
   padding: 2rem;
 }
 .intro__title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
   padding: 2rem;
 }
 .intro__description {
-  font-family: "Chivo Mono", monospace;
-  font-size: 1.5em;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
   color: black;
   width: 50%;
   text-align: center;
@@ -114,10 +139,11 @@
   display: grid;
   grid-template-areas: "x x" "y1 y2" "z z";
   row-gap: 1rem;
+  padding-top: 2rem;
 }
 .card__body-title {
   grid-area: x;
-  font-family: "Chivo Mono", monospace;
+  font-family: "Orbitron", sans-serif;
   font-size: 1.5em;
   color: black;
   font-weight: bold;
@@ -127,7 +153,7 @@
 }
 .card__body-genre-text {
   grid-area: y1;
-  font-family: "Chivo Mono", monospace;
+  font-family: "Orbitron", sans-serif;
   font-size: 0.7em;
   color: black;
   font-weight: bold;
@@ -142,7 +168,7 @@
 }
 .card__body-description {
   grid-area: z;
-  font-family: "Chivo Mono", monospace;
+  font-family: "Orbitron", sans-serif;
   font-size: 1em;
   color: black;
 }
@@ -178,22 +204,22 @@
   display: flex;
   justify-content: center;
   background-color: black;
-  border-top: 0.5em solid #ffaa22;
-  padding: 2em;
+  border-top: 0.5rem solid #ffaa22;
+  padding: 2rem;
 }
 .footer__container {
   display: flex;
   align-items: center;
 }
 .footer__p {
-  font-size: 1em;
+  font-size: 1rem;
   color: grey;
 }
 .footer__ul {
   display: flex;
 }
 .footer__li {
-  margin: 0 0.4em;
+  margin: 0 0.4rem;
 }
 .footer__ico {
   width: 100%;
@@ -209,6 +235,12 @@
   background: linear-gradient(transparent, #ffaa22 30%, #ffaa22 70%, transparent);
   margin-bottom: 3rem;
 }
+.selector__text {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+}
 .selector__input {
   height: 2rem;
   border-radius: 10px;
@@ -218,6 +250,10 @@
   font-size: 3rem;
 }
 .selector__submit {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.7rem;
+  color: black;
+  font-weight: bold;
   height: 2rem;
   width: 4rem;
   border-radius: 10px;
