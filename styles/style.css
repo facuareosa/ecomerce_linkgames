@@ -31,8 +31,10 @@
 .header__ul {
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 .header__li {
+  position:relative;
   font-family: "Orbitron", sans-serif;
   font-size: 1rem;
   color: black;
@@ -44,6 +46,22 @@
 .header__li-a {
   text-decoration: none;
   color: inherit;
+}
+.header__li-img {
+  height: 2rem;
+}
+.header__li-span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .intro {
@@ -144,17 +162,14 @@
 .card__body-title {
   grid-area: x;
   font-family: "Orbitron", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: black;
   font-weight: bold;
-}
-.card__body-genre {
-  margin-top: 0px;
 }
 .card__body-genre-text {
   grid-area: y1;
   font-family: "Orbitron", sans-serif;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   color: black;
   font-weight: bold;
   padding: 5px;
@@ -163,13 +178,15 @@
 }
 .card__body-price {
   grid-area: y2;
-  font-size: 1rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  color: black;
   justify-self: end;
 }
 .card__body-description {
   grid-area: z;
   font-family: "Orbitron", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   color: black;
 }
 .card__btn {

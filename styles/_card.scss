@@ -75,17 +75,17 @@
 
         &-title {
             grid-area: x;
-            @include font($fuente,1.5em, black);
+            @include font($fuente,1.5rem, black);
             font-weight: bold;
             
         }
 
         &-genre {
-            margin-top: 0px;
+            
 
             &-text {
                 grid-area: y1;
-                @include font($fuente,0.7em, black);
+                @include font($fuente,0.7rem, black);
                 font-weight: bold;
                 padding: 5px;
                 border-radius: 10px;
@@ -95,13 +95,13 @@
 
         &-price{
             grid-area: y2;
-            font-size: 1rem;
+            @include font($fuente,1.5rem, black);
             justify-self: end;
         }
 
         &-description {
             grid-area: z;
-            @include font($fuente,1em, black);
+            @include font($fuente,1rem, black);
         }
     }
 

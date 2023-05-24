@@ -13,7 +13,7 @@ export function createCard(gameData){
         <div class="card__body">
             <h2 class="card__body-title">${gameData.title}</h2>
             <h3 class="card__body-genre"><span class="card__body-genre-text">${gameData.genre}</span></h3>
-            <span class="card__body-price">${gameData.price}</span>
+            <span class="card__body-price">€ ${gameData.price}</span>
             <p class="card__body-description">${gameData.description}</p>
         </div>
         <button class="card__btn">añadir</button>
