@@ -1,6 +1,8 @@
 $colores:(
     "principal": #ffaa22,
     "sombra":   #ffee66,
+    "borrar": rgb(255, 0, 0),
+    "exito": rgb(35, 185, 35  ),
     );
 
 $fuente: ('Orbitron', sans-serif);
@@ -16,6 +18,26 @@ $fuente: ('Orbitron', sans-serif);
     font-family: $family;
     font-size: $size;
     color: $color;
+}
+
+@mixin btn($color){
+    width: fit-content;
+    align-self: center;
+    margin-top: auto;
+    box-shadow: 0px 0px 0px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffffff 5%, map-get($colores, $color) 100%);
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid map-get($colores, $color);
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-family: Arial;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.4rem 2rem;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px map-get($colores, $color);
 }
 
 @mixin fadeAnimation($time){
