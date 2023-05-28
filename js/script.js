@@ -17,13 +17,17 @@ window.onload = function() {
 const search = document.querySelector(".selector__submit");
 search.addEventListener("click", filter)
 
-// abrir modal
+// abrir modal-cerrar modal
 
 const cart = document.querySelector(".header__li-img");
+const modalElement = document.querySelector(".modal");
 
 cart.addEventListener("click", ()=> {
-    const modalElement = document.querySelector(".modal");
-    
-    if (!modalElement.classList.contains("modal-open"))
     modalElement.classList.add("modal-open");
 })
+
+document.addEventListener("click", (event) => {
+    if (event.target.matches(".modal, .modal__close")) {
+    modalElement.classList.remove("modal-open");
+    }
+});

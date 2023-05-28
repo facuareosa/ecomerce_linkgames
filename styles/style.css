@@ -330,6 +330,8 @@
 }
 .modal__close {
   justify-self: end;
+  text-align: center;
+  cursor: pointer;
 }
 .modal__header {
   display: grid;

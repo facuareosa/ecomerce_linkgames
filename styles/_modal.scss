@@ -25,6 +25,8 @@
     }
     &__close{
         justify-self: end;
+        text-align: center;
+        cursor: pointer;
     }
     &__header{
         display: grid;
