@@ -1,10 +1,15 @@
 @import "variables";
 
 .modal{
-    position:fixed;
-    inset: 0;
-    background-color: #111111bd;
-    display: flex;
+    display: none;
+    &-open{
+        display: flex;
+        position:fixed;
+        inset: 0;
+        background-color: #111111bd;
+        @include fadeAnimation(.5s);
+    }
+
     &__container{
         display: grid;
         gap: 1rem;
@@ -27,8 +32,7 @@
         text-align: center;
     }
     &__chartTitle{
-        @include font($fuente,1.3rem,black);
-        font-weight: bold;
+        @include font($fuente,1.3rem, bold);
 
         &:nth-child(2){
             grid-column: 2;
@@ -42,11 +46,25 @@
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         align-items: center;
-        @include font($fuente,1rem,black);
+        @include font($fuente,1rem);
     }
     &__img{
         width: 5rem;
         height: 5rem;
+    }
+    &__price{
+
+    }
+    &__totalContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        margin: 1rem 0;
+    }
+    &__toalPrice{
+        grid-column: 3;
+        @include font($fuente,1rem, bold);
+        text-transform: uppercase;
     }
     &__btnContainer{
         display: flex;

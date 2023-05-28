@@ -1,6 +1,9 @@
 import { JSONfetch } from './component/jsonFetch.js';
 import { createCard } from './component/createCard.js';
+import { filter } from './component/filter.js';
 
+
+//llamada al JSON y creacion de tarjetas con todos los datos
 window.onload = function() {
     JSONfetch()
         .then(data => {
@@ -10,34 +13,17 @@ window.onload = function() {
         });
 };
 
+// llamada al filtro
 const search = document.querySelector(".selector__submit");
+search.addEventListener("click", filter)
 
-search.addEventListener("click", () => {
-    JSONfetch()
-        .then(data => {
-            const filterInput = document.querySelector(".selector__input");
-            const genreSelected = filterInput.value;
-            const gamesToDisplay = filterByGenre(data.games, genreSelected);
-            renderFilteredGames(gamesToDisplay);
-            filterInput.value = ""
-        });
-});
+// abrir modal
 
-function filterByGenre(data, genero) {
-    if (genero !== "Todos") {
-        return data.filter((game) => game.genre === genero);
-    }
-}
+const cart = document.querySelector(".header__li-img");
 
-function renderFilteredGames(filteredGames) {
-    const gameContainer = document.querySelector(".games__container");
-
-    while (gameContainer.firstChild) {
-        gameContainer.removeChild(gameContainer.firstChild);
-    }
-
-    filteredGames.forEach((game) => {
-        createCard(game);
-    });
-}
-
+cart.addEventListener("click", ()=> {
+    const modalElement = document.querySelector(".modal");
+    
+    if (!modalElement.classList.contains("modal-open"))
+    modalElement.classList.add("modal-open");
+})

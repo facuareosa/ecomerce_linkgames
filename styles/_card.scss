@@ -75,9 +75,7 @@
 
         &-title {
             grid-area: x;
-            @include font($fuente,1.5rem, black);
-            font-weight: bold;
-            
+            @include font($fuente,1.5rem, bold);
         }
 
         &-genre {
@@ -85,8 +83,7 @@
 
             &-text {
                 grid-area: y1;
-                @include font($fuente,0.7rem, black);
-                font-weight: bold;
+                @include font($fuente,0.7rem, bold);
                 padding: 5px;
                 border-radius: 10px;
                 background-color: rgb(212, 212, 212);
@@ -95,13 +92,13 @@
 
         &-price{
             grid-area: y2;
-            @include font($fuente,1.5rem, black);
+            @include font($fuente,1.5rem);
             justify-self: end;
         }
 
         &-description {
             grid-area: z;
-            @include font($fuente,1rem, black);
+            @include font($fuente,1rem);
         }
     }
 

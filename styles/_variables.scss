@@ -14,9 +14,10 @@ $fuente: ('Orbitron', sans-serif);
     row-gap: 1rem;
 }
 
-@mixin font($family, $size, $color){
+@mixin font($family, $size, $weight:100, $color:black){
     font-family: $family;
     font-size: $size;
+    font-weight: $weight;
     color: $color;
 }
 

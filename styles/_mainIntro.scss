@@ -7,13 +7,12 @@
     justify-content: center;
     padding: 2rem;
     &__title{
-        @include font($fuente,2rem, black);
+        @include font($fuente, 2rem, bold);
         text-transform: uppercase;
-        font-weight: bold;
         padding: 2rem;
     }
     &__description{
-        @include font($fuente,1.5rem, black);
+        @include font($fuente,1.5rem);
         width: 50%;
         text-align: center;
     }

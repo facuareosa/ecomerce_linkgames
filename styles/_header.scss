@@ -14,9 +14,8 @@
         align-items: center;
     }
     &__h1{
-        @include font($fuente, 2rem, black);
+        @include font($fuente, 2rem, bold);
         text-transform: uppercase;
-        font-weight: 900;
         justify-self: start;
     }
     &__logo{     
@@ -34,7 +33,7 @@
         position:relative;
     }
     &__li{
-        @include font($fuente,1rem, black);
+        @include font($fuente,1rem);
         &:hover{
             scale: 1.1;
             transition: .3s;
