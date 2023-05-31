@@ -24,4 +24,20 @@ export function createCard(gameData){
     let cardSection = document.querySelector(".games__container");
 
         cardSection.appendChild(article);
-};
+
+    let cardBtn = article.querySelector(".card__btn")
+
+    function handleButtonClick(){
+
+    let card = this.parentNode;
+
+      // Acceder a los elementos hijos del article para obtener la información deseada
+    let title = card.querySelector(".card__body-title").textContent;
+    let price = card.querySelector(".card__body-price").textContent;
+
+      // Ejemplo: Imprimir la información en la consola
+    console.log("Título:", title);
+    console.log("Precio:", price);
+        };
+        cardBtn.addEventListener("click", handleButtonClick);
+    };

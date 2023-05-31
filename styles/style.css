@@ -361,8 +361,8 @@
   color: black;
 }
 .modal__img {
-  width: 5rem;
-  height: 5rem;
+  width: 8rem;
+  height: 8rem;
 }
 .modal__totalContainer {
   display: grid;

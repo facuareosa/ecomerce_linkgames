@@ -4,7 +4,6 @@ import { createCard } from './createCard.js';
 export function filter() {
     JSONfetch()
         .then(data => {
-            console.log("hola")
             const filterInput = document.querySelector(".selector__input");
             const genreSelected = filterInput.value;
             const gamesToDisplay = filterByGenre(data.games, genreSelected);
@@ -13,16 +12,15 @@ export function filter() {
         });
 };
 
-
-
 function filterByGenre(data, genero) {
     if (genero !== "Todos") {
         return data.filter((game) => game.genre === genero);
+    } else {
+        return data; // Devuelve todos los juegos sin filtrar
     }
 }
 
 function renderFilteredGames(filteredGames) {
-    console.log(filteredGames)
     const gameContainer = document.querySelector(".games__container");
 
     while (gameContainer.firstChild) {
