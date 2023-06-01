@@ -335,7 +335,7 @@
 }
 .modal__header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
   text-align: center;
 }
 .modal__chartTitle {
@@ -345,24 +345,40 @@
   color: black;
 }
 .modal__chartTitle:nth-child(2) {
-  grid-column: 2;
+  grid-column: 3;
 }
 .modal__chartTitle:nth-child(3) {
-  grid-column: 3;
+  grid-column: 4;
 }
 .modal__article {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
   justify-items: center;
   align-items: center;
   font-family: "Orbitron", sans-serif;
   font-size: 1rem;
   font-weight: 100;
   color: black;
+  margin-bottom: 1rem;
+}
+.modal__article-container {
+  max-height: 27rem;
+  overflow: auto;
+}
+.modal__numbers {
+  width: 2rem;
+  border-radius: 10px;
+  border: #ffaa22 solid 3px;
 }
 .modal__img {
   width: 8rem;
   height: 8rem;
+}
+.modal__trash {
+  cursor: pointer;
+}
+.modal__trash:hover {
+  scale: 1.1;
 }
 .modal__totalContainer {
   display: grid;

@@ -30,25 +30,36 @@
     }
     &__header{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: .5fr repeat(3, 1fr) .5fr;
         text-align: center;
     }
     &__chartTitle{
         @include font($fuente,1.3rem, bold);
 
         &:nth-child(2){
-            grid-column: 2;
+            grid-column: 3;
         }
         &:nth-child(3){
-            grid-column: 3;
+            grid-column: 4;
         }
     }
     &__article{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: .5fr repeat(3, 1fr) .5fr;
         justify-items: center;
         align-items: center;
         @include font($fuente,1rem);
+        margin-bottom: 1rem;
+
+        &-container{
+            max-height: 27rem;
+            overflow: auto;
+        }
+    }
+    &__numbers{
+        width: 2rem;
+        border-radius: 10px;
+        border: map-get($colores, principal) solid 3px;
     }
     &__img{
         width: 8rem;
@@ -56,6 +67,12 @@
     }
     &__price{
 
+    }
+    &__trash{
+        cursor: pointer;
+        &:hover{
+            scale: 1.1
+        }
     }
     &__totalContainer{
         display: grid;

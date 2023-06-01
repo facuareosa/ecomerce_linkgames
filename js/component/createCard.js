@@ -1,3 +1,5 @@
+import { shop } from './appCart.js';
+
 export function createCard(gameData){    
 
     let article = document.createElement("article");
@@ -31,13 +33,12 @@ export function createCard(gameData){
 
     let card = this.parentNode;
 
-      // Acceder a los elementos hijos del article para obtener la información deseada
+    let img = card.querySelector(".card__img-background").src;
     let title = card.querySelector(".card__body-title").textContent;
     let price = card.querySelector(".card__body-price").textContent;
 
-      // Ejemplo: Imprimir la información en la consola
-    console.log("Título:", title);
-    console.log("Precio:", price);
+        shop(img,title,price)
+
         };
         cardBtn.addEventListener("click", handleButtonClick);
     };
