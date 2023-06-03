@@ -3,7 +3,7 @@
         {
             "title": "Graveyard keeper",
             "genre": "Farming",
-            "price": 200,
+            "price": 25,
             "description": "Los creadores de Punch Club nos traen Graveyard Keeper, el simulador de gestión de cementerios medievales más impreciso de la historia.",
             "img": "./assets/img/img_game/graveyard_keeper.jpg",
             "imgh": "./assets/img/img_hover/graveyard_keeper_h.png"
@@ -27,7 +27,7 @@
         {
             "title": "CSGO",
             "genre": "Shooter",
-            "price": 200,
+            "price": 100,
             "description": "Counter-Strike: Global Offensive (CS:GO) amplía el juego de acción por equipos del que fue pionero cuando salió hace más de 20 años. CS:GO incluye nuevos mapas, personajes, armas y modos de juego, y ofrece versiones actualizadas del contenido clásico de Counter-Strike",
             "img": "./assets/img/img_game/csgo.webp",
             "imgh": "./assets/img/img_hover/csgo_h.png"
@@ -35,7 +35,7 @@
         {
             "title": "New World",
             "genre": "RPG",
-            "price": 200,
+            "price": 400,
             "description": "Explora un emocionante MMO de mundo abierto repleto de peligros y oportunidades en el que forjarás un nuevo destino en la isla sobrenatural de Aetérnum.",
             "img": "./assets/img/img_game/new_world.jpg",
             "imgh": "./assets/img/img_hover/new_world_h.png"
