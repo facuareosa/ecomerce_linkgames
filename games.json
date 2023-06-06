@@ -3,7 +3,7 @@
         {
             "title": "Graveyard keeper",
             "genre": "Farming",
-            "price": 25,
+            "price": 25,    
             "description": "Los creadores de Punch Club nos traen Graveyard Keeper, el simulador de gestión de cementerios medievales más impreciso de la historia.",
             "img": "./assets/img/img_game/graveyard_keeper.jpg",
             "imgh": "./assets/img/img_hover/graveyard_keeper_h.png"
