@@ -1,7 +1,7 @@
 import { JSONfetch } from './component/jsonFetch.js';
 import { createCard } from './component/createCard.js';
 import { filter } from './component/filter.js';
-
+import { shop } from './component/appCart.js';
 
 //llamada al JSON y creacion de tarjetas con todos los datos
 window.onload = function() {
@@ -24,6 +24,7 @@ const modalElement = document.querySelector(".modal");
 
 cart.addEventListener("click", ()=> {
     modalElement.classList.add("modal-open");
+    shop();
 })
 
 document.addEventListener("click", (event) => {

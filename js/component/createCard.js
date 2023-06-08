@@ -1,5 +1,3 @@
-import { shop } from './appCart.js';
-
 export function createCard(gameData){    
 
     let article = document.createElement("article");
@@ -29,16 +27,24 @@ export function createCard(gameData){
 
     let cardBtn = article.querySelector(".card__btn")
 
-    function handleButtonClick(){
+    function handleButtonClick() {
+        let card = this.parentNode;
+        let img = card.querySelector(".card__img-background").src;
+        let title = card.querySelector(".card__body-title").textContent;
+        let price = card.querySelector(".card__body-price").textContent;
+    
+        let cartItems = localStorage.getItem("cartItems");
+        cartItems = cartItems ? JSON.parse(cartItems) : [];
 
-    let card = this.parentNode;
-
-    let img = card.querySelector(".card__img-background").src;
-    let title = card.querySelector(".card__body-title").textContent;
-    let price = card.querySelector(".card__body-price").textContent;
-
-        shop(img,title,price)
-
-        };
+        let existingProduct = cartItems.find((product) => product.title === title);
+            if (existingProduct) {
+                alert("El producto ya está en el carrito.");
+                return;
+            }
+    
+        cartItems.push({ img, title, price });
+    
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    }
         cardBtn.addEventListener("click", handleButtonClick);
-    };
+};
