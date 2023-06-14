@@ -365,6 +365,22 @@
   max-height: 27rem;
   overflow: auto;
 }
+.modal__empty {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1rem 0;
+  align-items: center;
+}
+.modal__empty-cross {
+  width: 5rem;
+}
+.modal__empty-text {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+}
 .modal__numbers {
   width: 2rem;
   border-radius: 10px;

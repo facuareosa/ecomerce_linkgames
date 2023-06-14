@@ -56,6 +56,19 @@
             overflow: auto;
         }
     }
+    &__empty{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 1rem 0;
+        align-items: center;
+        &-cross{
+            width: 5rem;
+        }
+        &-text{
+            @include font($fuente,1rem, bold);
+        }
+    }
     &__numbers{
         width: 2rem;
         border-radius: 10px;
