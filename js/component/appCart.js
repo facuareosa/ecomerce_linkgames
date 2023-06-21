@@ -7,9 +7,12 @@ export function shop() {
   gameShopSection.innerHTML = "";
 
   let modalTotalPrice = [];
-  console.log(modalTotalPrice);
 
   let initialTotalPrice = 0;
+
+  const numItems = cartItems.length;
+  const cartSpan = document.querySelector(".header__li-span");
+        cartSpan.textContent = numItems;
 
   if (cartItems.length === 0) {
     const emptyCartTemplate = `
@@ -74,7 +77,6 @@ export function shop() {
     document.getElementById("totalSpan").textContent = initialTotalPrice;
   }
 }
-  
 
 function removeFromCart(event) {
     if (event.target.classList.contains("modal__trash")) {

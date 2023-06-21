@@ -366,11 +366,20 @@
   overflow: auto;
 }
 .modal__empty {
+  animation: fadeIn 1.5s;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin: 1rem 0;
   align-items: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .modal__empty-cross {
   width: 5rem;

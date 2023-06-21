@@ -45,6 +45,10 @@ export function createCard(gameData){
         cartItems.push({ img, title, price });
     
         localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+        const numItems = cartItems.length;
+        const cartSpan = document.querySelector(".header__li-span");
+              cartSpan.textContent = numItems;
     }
         cardBtn.addEventListener("click", handleButtonClick);
 };

@@ -57,6 +57,7 @@
         }
     }
     &__empty{
+        @include fadeAnimation(1.5s); 
         display: flex;
         flex-direction: column;
         gap: 2rem;
