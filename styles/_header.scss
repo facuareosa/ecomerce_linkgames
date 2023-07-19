@@ -15,16 +15,25 @@
     }
     &__h1{
         @include font($fuente, 2rem, bold);
+        @include mobile{
+            display: none;
+        }
         text-transform: uppercase;
         justify-self: start;
     }
     &__logo{     
         justify-self: center;
         max-height: 5rem;
+        @include mobile{
+            grid-column: 2;
+        }
     }
     &__nav{
         justify-self: end;
         gap: 1rem;
+        @include mobile{
+            display: none;
+        }
     }
     &__ul{
         display: flex;

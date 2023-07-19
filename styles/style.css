@@ -20,13 +20,28 @@
   text-transform: uppercase;
   justify-self: start;
 }
+@media screen and (max-width: 480px) {
+  .header__h1 {
+    display: none;
+  }
+}
 .header__logo {
   justify-self: center;
   max-height: 5rem;
 }
+@media screen and (max-width: 480px) {
+  .header__logo {
+    grid-column: 2;
+  }
+}
 .header__nav {
   justify-self: end;
   gap: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .header__nav {
+    display: none;
+  }
 }
 .header__ul {
   display: flex;
@@ -87,6 +102,7 @@
   color: black;
   width: 50%;
   text-align: center;
+  line-height: 1.8rem;
 }
 
 .card {
@@ -398,6 +414,7 @@
 .modal__img {
   width: 8rem;
   height: 8rem;
+  object-fit: cover;
 }
 .modal__trash {
   cursor: pointer;

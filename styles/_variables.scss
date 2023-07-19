@@ -53,3 +53,15 @@ $fuente: ('Orbitron', sans-serif);
         
     }
 }
+
+@mixin tablet {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width:480px) {
+        @content
+    }
+}
