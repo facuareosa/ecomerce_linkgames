@@ -80,6 +80,19 @@
   line-height: 20px;
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #ffaa22;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
