@@ -10,12 +10,21 @@
         @include font($fuente, 2rem, bold);
         text-transform: uppercase;
         padding: 2rem;
+        @include mobile{
+            width: 100%;
+            text-align: center
+        }
     }
     &__description{
         @include font($fuente,1.5rem);
         width: 50%;
         text-align: center;
         line-height: 1.8rem;
+        @include mobile{
+            font-size: 1.3rem;
+            width: 100%;
+            text-align: center
+        }
     }
 }
 
