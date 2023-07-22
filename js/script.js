@@ -2,6 +2,7 @@ import { JSONfetch } from './component/jsonFetch.js';
 import { createCard } from './component/createCard.js';
 import { filter } from './component/filter.js';
 import { shop } from './component/appCart.js';
+import { displayMenu } from './component/menu.js';
 
 //llamada al JSON y creacion de tarjetas con todos los datos
 window.onload = function() {
@@ -32,3 +33,9 @@ document.addEventListener("click", (event) => {
     modalElement.classList.remove("modal-open");
     }
 });
+
+// Display menu hamburguesa
+
+const menuBtn = document.querySelector(".header__menu");
+
+menuBtn.addEventListener("click", displayMenu);
