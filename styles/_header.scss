@@ -4,14 +4,20 @@
     background: linear-gradient(map-get($colores, principal) 70%, transparent);
     height: 5rem;
     display: flex;
-    align-items: center;
+    transition: height 0.5s ease;
+    &-activo{
+        height: 100vh;
+        align-items: baseline;
+    }
     &__container{
         width: 90%;
-        height: 100%;
         display: grid;
         margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
+        @include mobile{ //------------------
+            grid-template-columns: 1fr;
+        }
     }
     &__h1{
         @include font($fuente, 2rem, bold);
@@ -25,14 +31,17 @@
         justify-self: center;
         max-height: 5rem;
         @include mobile{
-            grid-column: 2;
+            grid-row: 1; //------------------
         }
     }
     &__nav{
         justify-self: end;
         gap: 1rem;
         @include mobile{
-            display: none;
+            display: flex;
+            height: 80vh;
+            justify-self: center;
+            align-items: center;
         }
     }
     &__ul{
@@ -40,8 +49,18 @@
         gap: 2rem;
         align-items: center;
         position:relative;
+        @include mobile{
+            flex-direction: column;
+            gap: 4rem;
+            opacity: 0;
+            transition: opacity .2s ease
+        }
+        &-activo{
+            opacity: 1;
+        }
     }
     &__li{
+        position:relative;
         @include font($fuente,1rem);
         &:hover{
             scale: 1.1;
@@ -71,7 +90,7 @@
     }
 }
 .menu{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -82,4 +101,11 @@
     width: 35px;
     border-radius: 50%;
     background-color: map-get($colores, principal);
+    transition: background-color .5s ease;
+    @include mobile{
+        display: flex;
+    }
+    &-activo{
+        background-color: transparent;
+    }
 }

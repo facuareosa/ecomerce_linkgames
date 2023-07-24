@@ -2,15 +2,23 @@
   background: linear-gradient(#ffaa22 70%, transparent);
   height: 5rem;
   display: flex;
-  align-items: center;
+  transition: height 0.5s ease;
+}
+.header-activo {
+  height: 100vh;
+  align-items: baseline;
 }
 .header__container {
   width: 90%;
-  height: 100%;
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .header__container {
+    grid-template-columns: 1fr;
+  }
 }
 .header__h1 {
   font-family: "Orbitron", sans-serif;
@@ -31,7 +39,7 @@
 }
 @media screen and (max-width: 480px) {
   .header__logo {
-    grid-column: 2;
+    grid-row: 1;
   }
 }
 .header__nav {
@@ -40,7 +48,10 @@
 }
 @media screen and (max-width: 480px) {
   .header__nav {
-    display: none;
+    display: flex;
+    height: 80vh;
+    justify-self: center;
+    align-items: center;
   }
 }
 .header__ul {
@@ -49,7 +60,19 @@
   align-items: center;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .header__ul {
+    flex-direction: column;
+    gap: 4rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+}
+.header__ul-activo {
+  opacity: 1;
+}
 .header__li {
+  position: relative;
   font-family: "Orbitron", sans-serif;
   font-size: 1rem;
   font-weight: 100;
@@ -81,7 +104,7 @@
 }
 
 .menu {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -92,6 +115,15 @@
   width: 35px;
   border-radius: 50%;
   background-color: #ffaa22;
+  transition: background-color 0.5s ease;
+}
+@media screen and (max-width: 480px) {
+  .menu {
+    display: flex;
+  }
+}
+.menu-activo {
+  background-color: transparent;
 }
 
 .intro {
