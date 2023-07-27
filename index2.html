@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
+    <title>Link Games</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__h1">Link Games</h1>
+            <img src="./assets/img/img_ico/lg_logo.png" alt="Link Games Logo" class="header__logo">
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__li">
+                        <a href="#" class="header__li-a">Contacto</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#" class="header__li-a">Recomendaciones</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#" class="header__li-a">
+                            <img class="header__li-img" src="./assets/img/img_ico/shopping-cart-free-5-svgrepo-com.svg" alt="shoping cart">                            
+                        </a>
+                        <span class="header__li-span">-</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__menu menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="menu__img" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 6l16 0"></path>
+                    <path d="M4 12l16 0"></path>
+                    <path d="M4 18l16 0"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="modal">
+            <div class="modal__container">
+                <span class="modal__close">X</span>
+                <div class="modal__header">
+                    <span class="modal__chartTitle"></span>
+                    <h4 class="modal__chartTitle">Articulo</h4>
+                    <h4 class="modal__chartTitle">Precio</h4>
+                </div>
+                <div class="modal__article-container">
+                </div>
+                <div class="modal__totalContainer">
+                    <p class="modal__toalPrice">total:€<span id="totalSpan"></span></p>
+                </div>
+                <div class="modal__btnContainer">
+                    <button class="modal__btn modal__btn-check">Comprar</button>
+                    <button class="modal__btn modal__btn-erase">Vaciar carro</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__p">created by Facu Areosa</p>
+            <ul class="footer__ul">
+                <li class="footer__li">
+                    <a href="https://github.com/facuareosa" class="footer__a">
+                        <img class="footer__ico" src="./assets/img/img_ico/github-icon.png" alt="github-icon">
+                    </a>
+                </li>
+                
+                <li class="footer__li">
+                    <a href="https://linkedin.com/in/facuareosa" class="footer__a">
+                        <img class="footer__ico" src="./assets/img/img_ico/linkedin-icon.png" alt="linkedin-icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="module" src="./js/script.js"></script>
+    <script src="./js/component/appCart.js"></script>
+</body>
+</html>

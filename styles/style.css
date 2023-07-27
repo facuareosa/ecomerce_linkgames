@@ -20,6 +20,11 @@
     grid-template-columns: 1fr;
   }
 }
+@media screen and (max-width: 768px) {
+  .header__container {
+    grid-template-columns: 1fr;
+  }
+}
 .header__h1 {
   font-family: "Orbitron", sans-serif;
   font-size: 2rem;
@@ -33,11 +38,21 @@
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .header__h1 {
+    display: none;
+  }
+}
 .header__logo {
   justify-self: center;
   max-height: 5rem;
 }
 @media screen and (max-width: 480px) {
+  .header__logo {
+    grid-row: 1;
+  }
+}
+@media screen and (max-width: 768px) {
   .header__logo {
     grid-row: 1;
   }
@@ -54,6 +69,14 @@
     align-items: center;
   }
 }
+@media screen and (max-width: 768px) {
+  .header__nav {
+    display: flex;
+    height: 80vh;
+    justify-self: center;
+    align-items: center;
+  }
+}
 .header__ul {
   display: flex;
   gap: 2rem;
@@ -61,6 +84,14 @@
   position: relative;
 }
 @media screen and (max-width: 480px) {
+  .header__ul {
+    flex-direction: column;
+    gap: 4rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+}
+@media screen and (max-width: 768px) {
   .header__ul {
     flex-direction: column;
     gap: 4rem;
@@ -122,6 +153,11 @@
     display: flex;
   }
 }
+@media screen and (max-width: 768px) {
+  .menu {
+    display: flex;
+  }
+}
 .menu-activo {
   background-color: transparent;
 }
@@ -147,6 +183,12 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 768px) {
+  .intro__title {
+    width: 100%;
+    text-align: center;
+  }
+}
 .intro__description {
   font-family: "Orbitron", sans-serif;
   font-size: 1.5rem;
@@ -157,6 +199,13 @@
   line-height: 1.8rem;
 }
 @media screen and (max-width: 480px) {
+  .intro__description {
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
   .intro__description {
     font-size: 1.3rem;
     width: 100%;

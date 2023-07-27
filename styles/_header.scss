@@ -15,13 +15,19 @@
         margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
-        @include mobile{ //------------------
+        @include mobile{
+            grid-template-columns: 1fr;
+        }
+        @include tablet{
             grid-template-columns: 1fr;
         }
     }
     &__h1{
         @include font($fuente, 2rem, bold);
         @include mobile{
+            display: none;
+        }
+        @include tablet{
             display: none;
         }
         text-transform: uppercase;
@@ -31,13 +37,22 @@
         justify-self: center;
         max-height: 5rem;
         @include mobile{
-            grid-row: 1; //------------------
+            grid-row: 1;
+        }
+        @include tablet{
+            grid-row: 1;
         }
     }
     &__nav{
         justify-self: end;
         gap: 1rem;
         @include mobile{
+            display: flex;
+            height: 80vh;
+            justify-self: center;
+            align-items: center;
+        }
+        @include tablet{
             display: flex;
             height: 80vh;
             justify-self: center;
@@ -50,6 +65,12 @@
         align-items: center;
         position:relative;
         @include mobile{
+            flex-direction: column;
+            gap: 4rem;
+            opacity: 0;
+            transition: opacity .2s ease
+        }
+        @include tablet{
             flex-direction: column;
             gap: 4rem;
             opacity: 0;
@@ -103,6 +124,9 @@
     background-color: map-get($colores, principal);
     transition: background-color .5s ease;
     @include mobile{
+        display: flex;
+    }
+    @include tablet{
         display: flex;
     }
     &-activo{
