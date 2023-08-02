@@ -17,7 +17,7 @@ export function shop() {
   if (cartItems.length === 0) {
     const emptyCartTemplate = `
     <div class="modal__empty">
-      <img class="modal__empty-cross" src="./assets/img/img_ico/cross.svg" alt="cross_ico">
+      <img class="modal__empty-cross" src="./assets/img/img_ico/cross.png" alt="cross_ico">
       <p class="modal__empty-text">Tu carrito está vacío</p>
     </div>
     `;
@@ -97,4 +97,51 @@ function removeFromCart(event) {
     }
 }
 
+function buyFromCart(event) {
+  if (event.target.classList.contains("modal__btn-check")) {
+    const modalContainer = document.querySelector(".modal__container");
+    const closeBtn = document.querySelector(".modal__close");
+    const buyCartTemplate = `
+      <div class="modal__buy">
+        <img class="modal__buy-check" src="./assets/img/img_ico/check.png" alt="check_ico">
+        <p class="modal__buy-text">Su compra se ha realizado con éxito</p>
+      </div>
+    `;
+    
+
+    while (modalContainer.lastChild !== closeBtn) {
+      modalContainer.removeChild(modalContainer.lastChild);
+    }
+
+    localStorage.removeItem("cartItems");
+
+    modalContainer.innerHTML = buyCartTemplate;
+
+    setTimeout(() => {
+      const restoreDefaultModal = `
+                <span class="modal__close">X</span>
+                <div class="modal__header">
+                    <span class="modal__chartTitle"></span>
+                    <h4 class="modal__chartTitle">Articulo</h4>
+                    <h4 class="modal__chartTitle">Precio</h4>
+                </div>
+                <div class="modal__article-container">
+                </div>
+                <div class="modal__totalContainer">
+                    <p class="modal__totalPrice">total:€<span id="totalSpan"></span></p>
+                </div>
+                <div class="modal__btnContainer">
+                    <button class="modal__btn modal__btn-check">Comprar</button>
+                    <button class="modal__btn modal__btn-erase">Vaciar carro</button>
+                </div>
+                `;
+      modalContainer.innerHTML = restoreDefaultModal; 
+
+      shop()
+      
+    }, 3000);
+  }
+}
+
 document.addEventListener("click", removeFromCart);
+document.addEventListener("click", buyFromCart);

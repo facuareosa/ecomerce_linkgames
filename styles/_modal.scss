@@ -70,6 +70,20 @@
             @include font($fuente,1rem, bold);
         }
     }
+    &__buy{
+        @include fadeAnimation(1.5s); 
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 1rem 0;
+        align-items: center;
+        &-check{
+            width: 5rem;
+        }
+        &-text{
+            @include font($fuente,1rem, bold);
+        }
+    }
     &__numbers{
         width: 2rem;
         border-radius: 10px;
@@ -95,7 +109,7 @@
         justify-items: center;
         margin: 1rem 0;
     }
-    &__toalPrice{
+    &__totalPrice{
         grid-column: 3;
         @include font($fuente,1rem, bold);
         text-transform: uppercase;

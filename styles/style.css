@@ -514,6 +514,31 @@
   font-weight: bold;
   color: black;
 }
+.modal__buy {
+  animation: fadeIn 1.5s;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1rem 0;
+  align-items: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal__buy-check {
+  width: 5rem;
+}
+.modal__buy-text {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+}
 .modal__numbers {
   width: 2rem;
   border-radius: 10px;
@@ -536,7 +561,7 @@
   justify-items: center;
   margin: 1rem 0;
 }
-.modal__toalPrice {
+.modal__totalPrice {
   grid-column: 3;
   font-family: "Orbitron", sans-serif;
   font-size: 1rem;
