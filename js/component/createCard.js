@@ -7,8 +7,8 @@ export function createCard(gameData){
     let cardTemplate =
         `
         <div class="card__img">
-            <img class="card__img-background" src=${gameData.img} alt="Graveyard-Keeper">
-            <img class="card__img-transition" src=${gameData.imgh} alt="Graveyard-Keeper hover">
+            <img class="card__img-background" src=${gameData.img} alt="${gameData.title}_img"=>
+            <img class="card__img-transition" src=${gameData.imgh} alt="${gameData.title}_imghover">
         </div>
         <div class="card__body">
             <h2 class="card__body-title">${gameData.title}</h2>

@@ -22,7 +22,6 @@ export function shop() {
     </div>
     `;
 
-    // Insertar el SVG y el mensaje en el elemento gameShopSection
     gameShopSection.innerHTML = emptyCartTemplate;
   } else {
     cartItems.forEach((product) => {
