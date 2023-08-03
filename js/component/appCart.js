@@ -97,7 +97,7 @@ function removeFromCart(event) {
 }
 
 function buyFromCart(event) {
-  if (event.target.classList.contains("modal__btn-check")) {
+  if (event.target.classList.contains("modal__btn-check") && localStorage.getItem("cartItems") !== null) {
     const modalContainer = document.querySelector(".modal__container");
     const closeBtn = document.querySelector(".modal__close");
     const buyCartTemplate = `
