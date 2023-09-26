@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="https://facuareosa.github.io/ecomerce-LinkGames/>"
-    <img width=50% src="https://raw.githubusercontent.com/facuareosa/ecomerce-LinkGames/main/assets/img/img_ico/lg_logo.png" alt="Link Games Logo"> ||-------> LOGO PAGINA
+  <a href="https://facuareosa.github.io/ecomerce-LinkGames/">
+    <img width=20% src="https://raw.githubusercontent.com/facuareosa/ecomerce-LinkGames/main/assets/img/img_ico/lg_logo.png" alt="Link Games Logo">
   </a>
 </p>
-<h1 align="center">LinkGames e-comerce</h1> ||-------> TITULO PAGINA
+<h1 align="center">LinkGames e-comerce</h1>
 
-<div align="center">  ||-------> BADGES
+<div align="center">
 
 [![HTML5 badge](https://img.shields.io/static/v1?label=&message=HTML5&color=orange&logo=html5&logoColor=white "HTML5 badge")](https://html.spec.whatwg.org/multipage/ "HTML5 badge")
 [![CCS3](https://img.shields.io/static/v1?label=&message=CSS3&color=blue&logo=css3&logoColor=white "CCS3")](https://www.w3.org/Style/CSS/ "CCS3")
@@ -16,12 +16,12 @@
 
 ------------
 
-- [####](http://#### "####") ||------->LINK PAGINA [Escrito](link "titulo")
+- [Link Games e-comerce](https://facuareosa.github.io/ecomerce-LinkGames/)
 
 ------------
 <h2 align="center">Screenshot Pagina Principal</h2>
 
-![####](####) ||------->SCREENSHOT PAGINA [titulo](link)
+![Link Games Screenshot]() ||------->SCREENSHOT PAGINA [titulo](link)
 <br>
 
 <h2 align="center">Descripción</h2>
