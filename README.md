@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://facuareosa.github.io/ecomerce-LinkGames/">
-    <img width=20% src="https://raw.githubusercontent.com/facuareosa/ecomerce-LinkGames/main/assets/img/img_ico/lg_logo.png" alt="Link Games Logo">
+  <a href="https://facuareosa.github.io/ecomerce_linkgames/">
+    <img width=20% src="https://raw.githubusercontent.com/facuareosa/ecomerce_linkgames/main/assets/img/img_ico/lg_logo.png" alt="Link Games Logo">
   </a>
 </p>
 <h1 align="center">LinkGames e-comerce</h1>
@@ -16,12 +16,12 @@
 
 ------------
 
-- [Link Games e-comerce](https://facuareosa.github.io/ecomerce-LinkGames)
+- [Link Games e-comerce](https://facuareosa.github.io/ecomerce_linkgames)
 
 ------------
 <h2 align="center">Screenshot Pagina Principal</h2>
 
-![Link Games Screenshot](https://raw.githubusercontent.com/facuareosa/ecomerce-LinkGames/main/assets/img/LinkGamesScreenshot.png)
+![Link Games Screenshot](https://raw.githubusercontent.com/facuareosa/ecomerce_linkgames/main/assets/img/LinkGamesScreenshot.png)
 <br>
 
 <h2 align="center">Descripción</h2>
