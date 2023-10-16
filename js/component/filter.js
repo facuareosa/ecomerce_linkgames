@@ -13,11 +13,7 @@ export function filter() {
 };
 
 function filterByGenre(data, genero) {
-    if (genero !== "Todos") {
-        return data.filter((game) => game.genre === genero);
-    } else {
-        return data;
-    }
+    return genero !== "Todos" && genero !== "" ? data.filter((game) => game.genre === genero) : data;
 }
 
 function renderFilteredGames(filteredGames) {
